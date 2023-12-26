@@ -8,11 +8,19 @@
 import SwiftUI
 
 struct profileFrameView: View {
+    var image : Image
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        image
+            .resizable()
+            .aspectRatio(contentMode: .fit)
+            .frame(width: 200 , height: 200)
+            .clipShape(Circle())
+            .overlay(Circle().stroke(Color.white,lineWidth: 5))
+            .shadow(radius: 20)
     }
 }
 
 #Preview {
-    profileFrameView()
+    profileFrameView(image: Image("spiderman"))
 }

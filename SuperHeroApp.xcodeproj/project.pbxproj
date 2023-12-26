@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		F4D3DD262B3B43A200A99D26 /* SuperHeroAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3DD252B3B43A200A99D26 /* SuperHeroAppApp.swift */; };
-		F4D3DD282B3B43A200A99D26 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3DD272B3B43A200A99D26 /* ContentView.swift */; };
+		F4D3DD282B3B43A200A99D26 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3DD272B3B43A200A99D26 /* ListView.swift */; };
 		F4D3DD2A2B3B43A400A99D26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D3DD292B3B43A400A99D26 /* Assets.xcassets */; };
 		F4D3DD2D2B3B43A400A99D26 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4D3DD2C2B3B43A400A99D26 /* Preview Assets.xcassets */; };
+		F4D3DD342B3B442B00A99D26 /* superHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3DD332B3B442B00A99D26 /* superHero.swift */; };
+		F4D3DD362B3B548100A99D26 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3DD352B3B548100A99D26 /* MapView.swift */; };
+		F4D3DD382B3B600700A99D26 /* detailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3DD372B3B600700A99D26 /* detailView.swift */; };
+		F4D3DD3B2B3B61AC00A99D26 /* profileFrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3DD3A2B3B61AC00A99D26 /* profileFrameView.swift */; };
+		F4D3DD3D2B3B6EEB00A99D26 /* ListRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3DD3C2B3B6EEB00A99D26 /* ListRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F4D3DD222B3B43A200A99D26 /* SuperHeroApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperHeroApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4D3DD252B3B43A200A99D26 /* SuperHeroAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroAppApp.swift; sourceTree = "<group>"; };
-		F4D3DD272B3B43A200A99D26 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F4D3DD272B3B43A200A99D26 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		F4D3DD292B3B43A400A99D26 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4D3DD2C2B3B43A400A99D26 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F4D3DD332B3B442B00A99D26 /* superHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = superHero.swift; sourceTree = "<group>"; };
+		F4D3DD352B3B548100A99D26 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		F4D3DD372B3B600700A99D26 /* detailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailView.swift; sourceTree = "<group>"; };
+		F4D3DD3A2B3B61AC00A99D26 /* profileFrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profileFrameView.swift; sourceTree = "<group>"; };
+		F4D3DD3C2B3B6EEB00A99D26 /* ListRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +61,15 @@
 		F4D3DD242B3B43A200A99D26 /* SuperHeroApp */ = {
 			isa = PBXGroup;
 			children = (
-				F4D3DD252B3B43A200A99D26 /* SuperHeroAppApp.swift */,
-				F4D3DD272B3B43A200A99D26 /* ContentView.swift */,
 				F4D3DD292B3B43A400A99D26 /* Assets.xcassets */,
 				F4D3DD2B2B3B43A400A99D26 /* Preview Content */,
+				F4D3DD252B3B43A200A99D26 /* SuperHeroAppApp.swift */,
+				F4D3DD272B3B43A200A99D26 /* ListView.swift */,
+				F4D3DD332B3B442B00A99D26 /* superHero.swift */,
+				F4D3DD352B3B548100A99D26 /* MapView.swift */,
+				F4D3DD372B3B600700A99D26 /* detailView.swift */,
+				F4D3DD3A2B3B61AC00A99D26 /* profileFrameView.swift */,
+				F4D3DD3C2B3B6EEB00A99D26 /* ListRowView.swift */,
 			);
 			path = SuperHeroApp;
 			sourceTree = "<group>";
@@ -137,8 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4D3DD282B3B43A200A99D26 /* ContentView.swift in Sources */,
+				F4D3DD3B2B3B61AC00A99D26 /* profileFrameView.swift in Sources */,
+				F4D3DD3D2B3B6EEB00A99D26 /* ListRowView.swift in Sources */,
+				F4D3DD282B3B43A200A99D26 /* ListView.swift in Sources */,
+				F4D3DD362B3B548100A99D26 /* MapView.swift in Sources */,
 				F4D3DD262B3B43A200A99D26 /* SuperHeroAppApp.swift in Sources */,
+				F4D3DD342B3B442B00A99D26 /* superHero.swift in Sources */,
+				F4D3DD382B3B600700A99D26 /* detailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

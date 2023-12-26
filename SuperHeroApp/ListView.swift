@@ -10,9 +10,16 @@ import SwiftUI
 struct ListView: View {
     var body: some View {
         VStack {
-            Text("Hello, world!")
+            NavigationView{
+                List(superheroArray){ superHero in
+                    NavigationLink(destination: detailView(selectedHero: superHero), label: {
+                        ListRowView(superhero: superHero)
+                    })
+                    
+                }
+                .navigationTitle(Text("Super Heros"))
+            }
         }
-        .padding()
     }
 }
 
